@@ -1,0 +1,281 @@
+@charset "UTF-8";
+html {
+  font-size: 100%;
+}
+body {
+  color: #383e45;
+  font-size: 0.9rem;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+li {
+  list-style: none;
+}
+.site-title {
+  width: 120px;
+  line-height: 1px;
+  padding: 10px 0;
+}
+.site-title a {
+  display: block;
+}
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto 100px auto;
+  padding: 0 4%;
+  text-align: center;
+}
+
+
+
+
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+#header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* 縦方向の揃え */
+  margin: 0 auto;
+}
+#header ul {
+  display: flex;
+  padding: 10px 0;
+}
+#header li {
+  margin-left: 30px;
+}
+#header li a {
+  color: #24292e;
+}
+#header li a:hover {
+  opacity: 0.7;
+}
+/* header a{
+  float: left;
+}
+.Profile a{
+  font-size: 25px;
+  background: #333;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  display: block;
+  width: 120px;
+  text-align: center;
+  margin: 10px 0px 10px 30px;
+}
+.About_Bicycle a{
+  font-size: 14px;
+  display: block;
+  text-decoration: none;
+  color: #333;
+  width: 100px;
+  text-align: center;
+}
+.About_Bicycle{
+  float: right;
+  margin: 15px 10px;
+}
+.About_Bicycle a:hover{
+  opacity: 0.8;
+} */
+/*-------------------------------------------
+Mainvisual
+-------------------------------------------*/
+#mainvisual {
+  margin-bottom: 80px;
+  background: paleturquoise;
+}
+#mainvisual img {
+  width: 100%;
+  max-width: 1920px;
+  height: 600px;
+  object-fit: cover;
+}
+
+
+
+
+/* .top img{
+  width: 100%;
+  height: 600px;
+} */
+
+/*-------------------------------------------
+About
+-------------------------------------------*/
+#about .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+#about .text {
+  text-align: left;
+}
+
+/* .about{
+  text-align: center;
+}
+.about >h2{
+  font-size: 30px;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #333;
+  padding-bottom: 1px;
+  margin: 100px 0 80px 0;
+}
+.profile p,
+.profile h2{
+  margin: 0;
+}
+.profile{
+  margin: 0 auto;
+}
+.profile img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.profile_content{
+  width: 300px;
+  margin: 0 auto;
+}
+.profile_content>h2{
+  font-size: 16px;
+  line-height: 3;
+} */
+
+/*-------------------------------------------
+Bicycle
+-------------------------------------------*/
+#bicycle ul {
+  display: flex;
+  justify-content: space-between;
+}
+#bicycle li {
+  width: 32%;
+}
+
+
+
+
+/* .bicycle{
+  margin: 0;
+  text-align: center;
+}
+.contents h2,
+.contents p{
+  margin: 0;
+}
+.bicycle > h2{
+  font-size: 30px;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #333;
+  padding-bottom: 1px;
+  margin: 100px 0 80px 0;
+  vertical-align: middle;
+}
+.bicycle{
+  padding-bottom: 250px;
+  background: lemonchiffon;
+}
+
+.bicycle img{
+  width: 150px;
+  height: 100px;
+}
+.contents{
+  justify-content: space-between;
+}
+.bicycle1{
+  float: left;
+}
+.bicycle2{
+  float: left;
+}
+.bicycle3{
+  float: left;
+}
+.contents p{
+  margin-bottom: 200px;
+} */
+/*-------------------------------------------
+footer
+-------------------------------------------*/
+footer{
+  display: block;
+  padding: 64px;
+  background: lightgreen;
+  text-align: center;
+}
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 1024px) {
+  .inner {
+    padding: 0 20px;
+  }
+
+  /*-------------------------------------------
+  ヘッダー
+  -------------------------------------------*/
+  #header {
+    padding: 0 10px;
+  }
+
+  /*-------------------------------------------
+  Index
+  -------------------------------------------*/
+  #index {
+    padding: 40px 20px;
+  }
+
+  /*-------------------------------------------
+  Image
+  -------------------------------------------*/
+  /*
+  画像を縦に並べる
+  */
+  .list {
+    flex-direction: column;
+  }
+  .list li {
+    width: 100%;
+    text-align: center;
+  }
+
+  /*-------------------------------------------
+  Detail
+  -------------------------------------------*/
+  #detail {
+    padding: 40px 20px;
+  }
+  /*
+  要素を縦に並べる
+  */
+  #detail .flex {
+    flex-direction: column;
+  }
+  #detail dl {
+    width: 100%;
+    border-right: none;
+    border-bottom: solid 1px #333;
+    padding: 0 0 40px 0;
+  }
+  #detail .text {
+    width: 100%;
+    padding: 40px 0 0 0;
+  }
+}
